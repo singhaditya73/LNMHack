@@ -1,4 +1,4 @@
-This application is used for real time tracking of memecoins and future updates will come for price prediction.
+This application is used for real time tracking of memecoins and future updates will come for price prediction. In future we will add a feature where user will get coins based on their prediction.
 ## Getting Started
 
 First, run the development server:
