@@ -12,3 +12,22 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Coin {
+  id            String   @id @default(cuid())
+  name          String
+  symbol        String
+  currentPrice  Float
+  marketCap     Float
+  priceChange   Float
+  lastUpdated   DateTime
+}
